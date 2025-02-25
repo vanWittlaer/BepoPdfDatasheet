@@ -11,6 +11,9 @@
             "homepage": "https://www.poensgen.de"
         }
     ],
+    "require": {
+        "shopware/core": "~6.6.0@dev"
+    },
     "autoload": {
         "psr-4": {
             "Bepo\\PdfDatasheet\\": "src/"
