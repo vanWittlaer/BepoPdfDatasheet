@@ -16,11 +16,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Bepo\\PdfDatasheet\\": "src/"
+            "BepoPdfDatasheet\\": "src/"
         }
     },
     "extra": {
-        "shopware-plugin-class": "Bepo\\PdfDatasheet\\BepoPdfDatasheet",
+        "shopware-plugin-class": "BepoPdfDatasheet\\BepoPdfDatasheet",
         "label": {
             "de-DE": "PDF Datenblatt - Demo-Plugin",
             "en-GB": "PDF Datasheet - Demo Plugin"

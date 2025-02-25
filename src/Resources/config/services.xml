@@ -7,7 +7,7 @@
     <services>
 
         <defaults autowire="true" autoconfigure="true"/>
-        <prototype namespace="Bepo\PdfDatasheet\" resource="../../../src/*" exclude="../src/{Resources}"/>
+        <prototype namespace="BepoPdfDatasheet\" resource="../../../src/*" exclude="../src/{Resources}"/>
 
     </services>
 </container>

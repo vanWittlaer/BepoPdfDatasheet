@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 
-namespace Bepo\PdfDatasheet;
+namespace BepoPdfDatasheet;
 
 
 use Shopware\Core\Framework\Plugin;

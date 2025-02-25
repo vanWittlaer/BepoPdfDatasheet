@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 
-namespace Bepo\PdfDatasheet\Storefront\Controller;
+namespace BepoPdfDatasheet\Storefront\Controller;
 
 
 use Shopware\Core\Checkout\Document\Renderer\RenderedDocument;
