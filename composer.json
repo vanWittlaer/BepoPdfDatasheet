@@ -1,0 +1,34 @@
+{
+    "name": "bepo/pdf-datasheet",
+    "description": "PDF Datasheet for Products",
+    "version": "0.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benny Poensgen",
+            "role": "Manufacturer",
+            "homepage": "https://www.poensgen.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bepo\\PdfDatasheet\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Bepo\\PdfDatasheet\\BepoPdfDatasheet",
+        "label": {
+            "de-DE": "PDF Datenblatt - Demo-Plugin",
+            "en-GB": "PDF Datasheet - Demo Plugin"
+        },
+        "manufacturerLink": {
+            "de-DE": "https://www.poensgen.de",
+            "en-GB": "https://www.poensgen.de"
+        },
+        "supportLink": {
+            "de-DE": "https://www.poensgen.de",
+            "en-GB": "https://www.poensgen.de"
+        }
+    }
+}

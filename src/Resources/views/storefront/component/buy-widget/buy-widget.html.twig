@@ -1,0 +1,11 @@
+{% sw_extends "@Storefront/storefront/component/buy-widget/buy-widget.html.twig" %}
+
+{% block buy_widget %}
+    {{ parent() }}
+    <a href="{{ path('frontend.datasheet', { productId: page.product.id }) }}"
+       target="_blank"
+       rel="nofollow"
+       class="btn btn-primary btn-block btn-buy bepo-pdf-datasheet-button">
+        {{ "bepo_pdf_datasheet.button_download"|trans|sw_sanitize }}
+    </a>
+{% endblock %}

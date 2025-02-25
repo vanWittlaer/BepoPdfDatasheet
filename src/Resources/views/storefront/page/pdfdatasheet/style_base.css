@@ -1,0 +1,129 @@
+body {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    width: 100%;
+    color: #000000;
+}
+
+.logo-container {
+    float: right;
+    width: 252px;
+    display: block;
+}
+
+.bild-und-preis {
+    height: 92mm;
+}
+
+.PreisG {
+    font-size: 30px;
+    margin-top: 7mm;
+}
+
+.bild {
+    float: left;
+    display: block;
+    width: 50%;
+}
+
+.bild img {
+    max-width: 92mm;
+    max-height: 92mm;
+}
+
+.preis-infos {
+    float: right;
+    display: block;
+    width: 50%;
+    line-height: 20px;
+}
+
+.content-block h2 {
+    padding-bottom: 6px;
+    border-bottom: 1px solid grey;
+}
+
+div.page_break {
+    page-break-before: always;
+}
+
+div.page_break + div.page_break {
+    page-break-before: always;
+}
+
+h1 {
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+/* Helper classes */
+.align-right {
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.small-padding-top {
+    padding-top: 15px;
+}
+
+/*Page */
+@page {
+    margin-top: 30mm;
+    margin-bottom: 24mm;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: -18mm;
+}
+
+
+/* Page count */
+.page-count {
+    width: 100%;
+    text-align: center;
+}
+
+.pagenum:after {
+    content: counter(page);
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: -6px;
+    font-size: 12px;
+    line-height: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+footer:after {
+    clear: both;
+}
+
+footer > ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10px;
+    display: block;
+    height: 100px;
+    float: left;
+}

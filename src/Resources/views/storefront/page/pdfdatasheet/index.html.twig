@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <style type="text/css">
+        {% sw_include '@BepoPdfDatasheet/storefront/page/pdfdatasheet/style_base.css' %}
+    </style>
+
+</head>
+<body>
+
+{# To include a header or footer on every site, these elements have to be defined before the content #}
+<header>
+    <div class="logo-container">
+        <img src="{{ asset('bundles/bepopdfdatasheet/storefront/img/Bepo-Logo.jpg') }}" width="200">
+    </div>
+</header>
+<footer>
+    {{ "bepo_pdf_datasheet.footer"|trans|sw_sanitize }}
+</footer>
+<div class="content-main">
+    <h1>
+        {{ page.product.translated.name }}
+    </h1>
+    <div class="bild-und-preis">
+        <div class="bild">
+            <img src="{{ page.product.cover.media.url }}"/>
+        </div>
+        <div class="preis-infos">
+            <div class="PreisG">
+                {% set price = page.product.calculatedPrice %}
+                {% if page.product.calculatedPrices|length == 1 %}
+                    {% set price = page.product.calculatedPrices.first %}
+                {% endif %}
+                {{ price.unitPrice|currency }}
+            </div>
+            <p>
+                {{ "general.grossTaxInformation"|trans|sw_sanitize }}
+            </p>
+            {% if page.product.releaseDate %}
+                <p>
+                    {{ "general.deliveryShipping"|trans|sw_sanitize }} {{ page.product.releaseDate|format_date('long', locale=app.request.locale) }}
+                </p>
+            {% endif %}
+            <p>
+                {{ "detail.productNumberLabel"|trans|sw_sanitize }} {{ page.product.productNumber }}
+                <br/>
+                {{ "component.product.feature.label.ean"|trans|sw_sanitize }} {{ page.product.ean }}
+            </p>
+        </div>
+    </div>
+    <div class="content-block">
+        <h2>
+            {{ "detail.tabsDescription"|trans|sw_sanitize }}
+        </h2>
+        <p>
+            {{ page.product.translated.description|raw }}
+        </p>
+    </div>
+
+</div>
+</body>
+</html>
