@@ -1,7 +1,7 @@
 {
     "name": "bepo/pdf-datasheet",
     "description": "PDF Datasheet for Products",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "type": "shopware-platform-plugin",
     "license": "MIT",
     "authors": [
